@@ -1,7 +1,7 @@
 {
-  "name": "aurelia-vance-photographer-portfolio",
+  "name": "maaya-studio-colombo",
   "version": "1.0.0",
-  "description": "High-end botanical fine art photographer portfolio inspired by organic dark botanical aesthetics, editorial gallery grids, and modern typography.",
+  "description": "Maaya Studio (Pvt) Ltd — Premier Wedding, Portrait & Cinematography Portfolio in Colombo, Sri Lanka.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,14 +9,15 @@
     "preview": "vite preview"
   },
   "keywords": [
-    "photographer",
-    "portfolio",
-    "botanical",
-    "dark-mode",
-    "editorial",
-    "gallery"
+    "maaya-studio",
+    "colombo",
+    "sri-lanka",
+    "wedding-photographer",
+    "cinematography",
+    "portrait",
+    "portfolio"
   ],
-  "author": "Aurelia Vance Studio",
+  "author": "Maaya Studio (Pvt) Ltd",
   "license": "MIT",
   "dependencies": {
     "clsx": "^2.1.1",

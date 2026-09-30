@@ -5,7 +5,7 @@ import { Maximize2, ChevronLeft, ChevronRight, X } from 'lucide-react';
 interface PhotoItem {
   id: string;
   title: string;
-  category: 'desert' | 'landscape' | 'cinematic' | 'architecture';
+  category: 'wedding' | 'preshoot' | 'tradition' | 'portrait';
   categoryLabel: string;
   location: string;
   camera: string;
@@ -18,132 +18,132 @@ interface PhotoItem {
 
 const GALLERY_PHOTOS: PhotoItem[] = [
   {
-    id: 'monolith',
-    title: 'Monolith at Sunbreak',
-    category: 'desert',
-    categoryLabel: 'Desert & Dunes',
-    location: 'AlUla Valley, Saudi Arabia',
-    camera: 'Leica M11 / Summicron-M 35mm f/2 ASPH',
-    exif: 'f/8.0 / 1/800s / ISO 100',
-    thumb: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1200&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2200&auto=format&fit=crop',
+    id: 'galle-vows',
+    title: 'The Galle Fort Vow Exchange',
+    category: 'wedding',
+    categoryLabel: 'Signature Wedding',
+    location: 'Galle Fort Ramparts, Southern Province',
+    camera: 'Sony FX3 / FE 50mm f/1.2 GM',
+    exif: 'f/1.4 / 1/2000s / ISO 100',
+    thumb: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2200&auto=format&fit=crop',
     colSpan: 'lg:col-span-7',
     heightClass: 'h-[360px] md:h-[400px]',
   },
   {
-    id: 'footprints',
-    title: 'Footprints in Wind',
-    category: 'desert',
-    categoryLabel: 'Desert & Dunes',
-    location: "Rub' al Khali, Empty Quarter",
-    camera: 'Sony α7R V / FE 24-70mm f/2.8 GM II',
-    exif: 'f/5.6 / 1/1000s / ISO 100',
-    thumb: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1000&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=2000&auto=format&fit=crop',
+    id: 'mount-lavinia',
+    title: 'Golden Hour at Mount Lavinia',
+    category: 'preshoot',
+    categoryLabel: 'Coastal Pre-Shoot',
+    location: 'Mount Lavinia Beach, Colombo',
+    camera: 'Sony α7R V / FE 85mm f/1.4 GM',
+    exif: 'f/1.8 / 1/1600s / ISO 100',
+    thumb: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2000&auto=format&fit=crop',
     colSpan: 'lg:col-span-5',
     heightClass: 'h-[360px] md:h-[400px]',
   },
   {
-    id: 'caravan',
-    title: 'Golden Hour Crossing',
-    category: 'desert',
-    categoryLabel: 'Desert & Dunes',
-    location: 'Wadi Rum Protected Area, Jordan',
+    id: 'poruwa-blessing',
+    title: 'Sacred Poruwa Traditions',
+    category: 'tradition',
+    categoryLabel: 'Traditional Ceremony',
+    location: 'Cinnamon Grand Ballroom, Colombo',
+    camera: 'Sony α7R V / FE 35mm f/1.4 GM',
+    exif: 'f/2.0 / 1/400s / ISO 400',
+    thumb: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1000&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=2000&auto=format&fit=crop',
+    colSpan: 'lg:col-span-4',
+    heightClass: 'h-[320px] md:h-[350px]',
+  },
+  {
+    id: 'hindu-elegance',
+    title: 'Crimson & Gold Splendor',
+    category: 'tradition',
+    categoryLabel: 'Hindu Ceremony',
+    location: 'Mayurapathy Kovil, Colombo 06',
+    camera: 'Sony α7R V / FE 85mm f/1.4 GM',
+    exif: 'f/1.4 / 1/800s / ISO 160',
+    thumb: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1000&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=2000&auto=format&fit=crop',
+    colSpan: 'lg:col-span-4',
+    heightClass: 'h-[320px] md:h-[350px]',
+  },
+  {
+    id: 'nuwara-eliya-mist',
+    title: 'Whispers in Ceylon Tea Hills',
+    category: 'preshoot',
+    categoryLabel: 'Highland Pre-Shoot',
+    location: 'Nuwara Eliya Tea Estates',
+    camera: 'Sony FX3 / FE 24-70mm f/2.8 GM II',
+    exif: 'f/2.8 / 1/640s / ISO 200',
+    thumb: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=1000&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=2000&auto=format&fit=crop',
+    colSpan: 'lg:col-span-4',
+    heightClass: 'h-[320px] md:h-[350px]',
+  },
+  {
+    id: 'bridal-silk',
+    title: 'Bridal Radiance in Silk',
+    category: 'portrait',
+    categoryLabel: 'Bridal Portrait',
+    location: 'Shangri-La Atelier, Colombo',
     camera: 'Hasselblad X2D 100C / XCD 90mm f/2.5',
-    exif: 'f/4.5 / 1/640s / ISO 100',
-    thumb: 'https://images.unsplash.com/photo-1547234935-80c7145ec969?q=80&w=1000&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1547234935-80c7145ec969?q=80&w=2000&auto=format&fit=crop',
-    colSpan: 'lg:col-span-4',
-    heightClass: 'h-[320px] md:h-[350px]',
-  },
-  {
-    id: 'linen-portrait',
-    title: 'Echoes in Crimson Linen',
-    category: 'cinematic',
-    categoryLabel: 'Cinematic Portrait',
-    location: 'Sahara Borderlands',
-    camera: 'Leica M11 / Noctilux-M 50mm f/0.95',
-    exif: 'f/1.2 / 1/2000s / ISO 50',
-    thumb: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2000&auto=format&fit=crop',
-    colSpan: 'lg:col-span-4',
-    heightClass: 'h-[320px] md:h-[350px]',
-  },
-  {
-    id: 'slot-canyon',
-    title: 'Chamber of Amber Light',
-    category: 'landscape',
-    categoryLabel: 'Wild Landscapes',
-    location: 'Page, Arizona Sandstone',
-    camera: 'Sony α7R V / FE 16-35mm f/2.8 GM',
-    exif: 'f/9.0 / 1/60s / ISO 200',
-    thumb: 'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?q=80&w=1000&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?q=80&w=2000&auto=format&fit=crop',
-    colSpan: 'lg:col-span-4',
-    heightClass: 'h-[320px] md:h-[350px]',
-  },
-  {
-    id: 'emerald-dawn',
-    title: 'Emerald Ridge at Dawn',
-    category: 'landscape',
-    categoryLabel: 'Wild Landscapes',
-    location: 'Yakushima Ancient Highlands, Japan',
-    camera: 'Hasselblad X2D 100C / XCD 55mm f/2.5',
-    exif: 'f/2.8 / 1/250s / ISO 64',
-    thumb: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1200&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2200&auto=format&fit=crop',
+    exif: 'f/2.8 / 1/500s / ISO 100',
+    thumb: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2200&auto=format&fit=crop',
     colSpan: 'lg:col-span-6',
     heightClass: 'h-[240px] md:h-[270px]',
   },
   {
-    id: 'morning-veil',
-    title: 'Morning Veil on Cedar',
-    category: 'landscape',
-    categoryLabel: 'Wild Landscapes',
-    location: 'Pacific Northwest Basin',
+    id: 'bentota-sunset',
+    title: 'Bentota Oceanfront Stroll',
+    category: 'preshoot',
+    categoryLabel: 'Sunset Romance',
+    location: 'Bentota Beach, Southern Province',
     camera: 'Sony α7R V / FE 70-200mm f/2.8 GM II',
-    exif: 'f/5.6 / 1/320s / ISO 250',
-    thumb: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1200&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2000&auto=format&fit=crop',
+    exif: 'f/2.8 / 1/1250s / ISO 100',
+    thumb: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1200&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2000&auto=format&fit=crop',
     colSpan: 'lg:col-span-6',
     heightClass: 'h-[240px] md:h-[270px]',
   },
   {
-    id: 'brutalism',
-    title: 'Shadow & Geometry',
-    category: 'architecture',
-    categoryLabel: 'Architecture & Form',
-    location: 'Glasshouse Pavilion, Prague',
-    camera: 'Hasselblad X2D 100C / XCD 120mm f/3.5 Macro',
-    exif: 'f/4.0 / 1/160s / ISO 100',
-    thumb: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=2000&auto=format&fit=crop',
+    id: 'first-dance',
+    title: 'The First Dance of Forever',
+    category: 'wedding',
+    categoryLabel: 'Grand Reception',
+    location: 'Hilton Grand Ballroom, Colombo',
+    camera: 'Sony FX3 / FE 24mm f/1.4 GM',
+    exif: 'f/1.6 / 1/250s / ISO 800',
+    thumb: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1000&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2000&auto=format&fit=crop',
     colSpan: 'lg:col-span-4',
     heightClass: 'h-[320px] md:h-[350px]',
   },
   {
-    id: 'zen-temple',
-    title: 'Zen Courtyard in Rain',
-    category: 'architecture',
-    categoryLabel: 'Architecture & Form',
-    location: 'Ryoan-ji Temple, Kyoto',
-    camera: 'Leica M11 / Summicron-M 35mm f/2 ASPH',
-    exif: 'f/2.8 / 1/125s / ISO 200',
-    thumb: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=2000&auto=format&fit=crop',
+    id: 'st-marys-vows',
+    title: 'Sanctuary of Eternal Devotion',
+    category: 'tradition',
+    categoryLabel: 'Church Nuptials',
+    location: 'St. Mary’s Church, Bambalapitiya',
+    camera: 'Sony α7R V / FE 50mm f/1.2 GM',
+    exif: 'f/1.8 / 1/320s / ISO 400',
+    thumb: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1000&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2000&auto=format&fit=crop',
     colSpan: 'lg:col-span-4',
     heightClass: 'h-[320px] md:h-[350px]',
   },
   {
-    id: 'glacial',
-    title: 'Glacial Stillness',
-    category: 'landscape',
-    categoryLabel: 'Wild Landscapes',
-    location: 'Alpine Hoh Basin',
-    camera: 'Leica M11 / APO-Summicron-M 50mm f/2',
-    exif: 'f/2.8 / 1/200s / ISO 160',
-    thumb: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000&auto=format&fit=crop',
-    full: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=2000&auto=format&fit=crop',
+    id: 'groom-regalia',
+    title: 'Groom in Aristocratic Regalia',
+    category: 'portrait',
+    categoryLabel: 'Editorial Portrait',
+    location: 'Galle Face Court, Colombo 03',
+    camera: 'Hasselblad X2D 100C / XCD 55mm f/2.5',
+    exif: 'f/2.5 / 1/800s / ISO 64',
+    thumb: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop',
+    full: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2000&auto=format&fit=crop',
     colSpan: 'lg:col-span-4',
     heightClass: 'h-[320px] md:h-[350px]',
   },
@@ -155,10 +155,10 @@ export const Gallery: React.FC = () => {
 
   const filterTabs = [
     { id: 'all', label: 'All Works' },
-    { id: 'desert', label: 'Desert & Dunes' },
-    { id: 'landscape', label: 'Wild Landscapes' },
-    { id: 'cinematic', label: 'Cinematic Portrait' },
-    { id: 'architecture', label: 'Architecture & Form' },
+    { id: 'wedding', label: 'Signature Weddings' },
+    { id: 'preshoot', label: 'Destination Pre-Shoots' },
+    { id: 'tradition', label: 'Traditions & Rituals' },
+    { id: 'portrait', label: 'Portraits & Regalia' },
   ];
 
   const filteredPhotos =
@@ -186,18 +186,18 @@ export const Gallery: React.FC = () => {
     <section id="gallery" className="py-24 md:py-32 px-4 sm:px-6 md:px-8 bg-[#F7F5EE] dark:bg-black transition-colors duration-500">
       <div className="max-w-7xl mx-auto flex flex-col gap-10">
         
-        {/* Header Row (Inspired by Image 2) */}
+        {/* Header Row */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4 border-b border-neutral-200 dark:border-white/10">
           <div>
             <span className="text-xs uppercase tracking-widest text-neutral-500 dark:text-[#DEDBC8] font-mono block mb-2 font-medium">
-              Curated Works
+              Curated Portfolio
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-neutral-900 dark:text-[#E1E0CC] tracking-tight">
-              Photo Gallery
+              Moments of Forever
             </h2>
           </div>
           <p className="text-neutral-500 dark:text-gray-400 text-xs sm:text-sm md:text-base max-w-md font-light leading-relaxed">
-            Captured moments from our desert expeditions, mountain trails, and architectural surveys worldwide.
+            Unforgettable wedding celebrations, romantic coastal pre-shoots, and traditional Poruwa ceremonies documented across Sri Lanka.
           </p>
         </div>
 
@@ -352,11 +352,11 @@ export const Gallery: React.FC = () => {
                 </div>
 
                 <a
-                  href="#prints"
+                  href="#contact"
                   onClick={() => setLightboxIndex(null)}
                   className="px-4 py-2 rounded-full bg-[#DEDBC8] text-black text-xs font-medium hover:bg-white transition-colors"
                 >
-                  Acquire Fine Art Print
+                  Inquire Wedding Collection
                 </a>
               </div>
             </motion.div>

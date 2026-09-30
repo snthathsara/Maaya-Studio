@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   const [isDark, setIsDark] = useState<boolean>(() => {
-    const saved = localStorage.getItem('vance_theme');
+    const saved = localStorage.getItem('maaya_theme');
     return saved ? saved === 'dark' : true;
   });
 
@@ -19,10 +19,10 @@ export const App: React.FC = () => {
     const root = document.documentElement;
     if (isDark) {
       root.classList.add('dark');
-      localStorage.setItem('vance_theme', 'dark');
+      localStorage.setItem('maaya_theme', 'dark');
     } else {
       root.classList.remove('dark');
-      localStorage.setItem('vance_theme', 'light');
+      localStorage.setItem('maaya_theme', 'light');
     }
   }, [isDark]);
 

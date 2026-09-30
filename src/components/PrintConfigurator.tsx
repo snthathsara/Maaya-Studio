@@ -10,54 +10,54 @@ interface ArtworkOption {
 
 const ARTWORKS: ArtworkOption[] = [
   {
-    id: 'monolith',
-    name: 'Monolith at Sunbreak',
-    location: 'AlUla Valley, Arabia',
-    img: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1200&auto=format&fit=crop',
+    id: 'galle-vows',
+    name: 'The Galle Fort Vow Exchange',
+    location: 'Galle Fort Ramparts',
+    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop',
   },
   {
-    id: 'footprints',
-    name: 'Footprints in Wind',
-    location: "Rub' al Khali, Empty Quarter",
-    img: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1200&auto=format&fit=crop',
+    id: 'mount-lavinia',
+    name: 'Golden Hour at Mount Lavinia',
+    location: 'Mount Lavinia Beach, Colombo',
+    img: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop',
   },
   {
-    id: 'caravan',
-    name: 'Golden Hour Crossing',
-    location: 'Wadi Rum, Jordan',
-    img: 'https://images.unsplash.com/photo-1547234935-80c7145ec969?q=80&w=1200&auto=format&fit=crop',
+    id: 'poruwa-blessing',
+    name: 'Sacred Poruwa Blessing',
+    location: 'Cinnamon Grand, Colombo',
+    img: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1200&auto=format&fit=crop',
   },
   {
-    id: 'mist',
-    name: 'Morning Veil on Cedar',
-    location: 'Pacific Northwest',
-    img: 'https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1200&auto=format&fit=crop',
+    id: 'hindu-elegance',
+    name: 'Crimson & Gold Splendor',
+    location: 'Mayurapathy Kovil, Colombo 06',
+    img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1200&auto=format&fit=crop',
   },
 ];
 
 export const PrintConfigurator: React.FC = () => {
   const [selectedArtwork, setSelectedArtwork] = useState<ArtworkOption>(ARTWORKS[0]);
   const [selectedSize, setSelectedSize] = useState<{ id: string; label: string; price: number }>({
-    id: 'medium',
-    label: 'Medium / 40 × 50 cm',
-    price: 380,
+    id: 'classic',
+    label: 'Classic Storybook / 10 × 14 in (30 Pages)',
+    price: 85000,
   });
   const [selectedFrame, setSelectedFrame] = useState<{ id: string; label: string; price: number }>({
-    id: 'oak',
-    label: 'Smoked Natural Oak',
-    price: 120,
+    id: 'leather',
+    label: 'Handcrafted Italian Leather',
+    price: 0,
   });
 
   const sizes = [
-    { id: 'medium', label: 'Medium / 40 × 50 cm', price: 380 },
-    { id: 'large', label: 'Large / 60 × 80 cm', price: 590 },
-    { id: 'collector', label: 'Exhibition / 90 × 120 cm', price: 950 },
+    { id: 'classic', label: 'Classic Storybook / 10 × 14 in (30 Pages)', price: 85000 },
+    { id: 'royal', label: 'Grand Royal Heirloom / 12 × 18 in (40 Pages)', price: 145000 },
+    { id: 'suite', label: 'Master Family Suite / 12 × 18 in + 2 Parent Albums', price: 210000 },
   ];
 
   const frames = [
-    { id: 'oak', label: 'Smoked Natural Oak', price: 120 },
-    { id: 'black', label: 'Matte Obsidian Aluminium', price: 120 },
-    { id: 'unframed', label: 'Print Only (Archival Tube)', price: 0 },
+    { id: 'leather', label: 'Handcrafted Italian Leather', price: 0 },
+    { id: 'acrylic', label: 'Crystal Acrylic Glass Facade', price: 25000 },
+    { id: 'box', label: 'Custom Hardwood & Velvet Presentation Case', price: 35000 },
   ];
 
   const totalPrice = selectedSize.price + selectedFrame.price;
@@ -69,13 +69,13 @@ export const PrintConfigurator: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto flex flex-col gap-3">
           <span className="text-xs uppercase tracking-widest text-neutral-500 dark:text-[#DEDBC8] font-mono font-medium">
-            Limited Editions
+            Heirloom Craftsmanship
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-neutral-900 dark:text-[#E1E0CC] tracking-tight">
-            Museum-Grade Fine Art Prints
+            Handcrafted Wedding Albums
           </h2>
           <p className="text-neutral-500 dark:text-gray-400 text-xs sm:text-sm md:text-base font-light leading-relaxed">
-            Printed on 310gsm 100% cotton rag paper with archival pigment inks rated for 200+ years. Each photograph is individually numbered, hand-signed, and accompanied by a certificate of authenticity.
+            Bound in fine Italian leathers, genuine velvet, and crystal acrylic glass. Seamless 180° panoramic lay-flat archival pages calibrated to preserve your sacred memories for generations.
           </p>
         </div>
 
@@ -88,11 +88,11 @@ export const PrintConfigurator: React.FC = () => {
               layout
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
               className={`w-full max-w-lg p-5 sm:p-7 rounded-2xl shadow-xl dark:shadow-2xl transition-colors duration-500 ${
-                selectedFrame.id === 'oak'
+                selectedFrame.id === 'leather'
                   ? 'bg-[#e2d5c5] dark:bg-[#2a221b] border-4 border-[#c5b19c] dark:border-[#3d3126]'
-                  : selectedFrame.id === 'black'
+                  : selectedFrame.id === 'acrylic'
                   ? 'bg-neutral-800 dark:bg-[#181818] border-4 border-neutral-900 dark:border-[#2b2b2b]'
-                  : 'bg-transparent border border-neutral-300 dark:border-white/20'
+                  : 'bg-[#d8cfc4] dark:bg-[#23201d] border-4 border-[#ad9f90] dark:border-[#4d443a]'
               }`}
             >
               <div className="bg-[#FAF8F5] p-6 sm:p-8 shadow-inner rounded-sm overflow-hidden">
@@ -113,7 +113,7 @@ export const PrintConfigurator: React.FC = () => {
 
             <div className="mt-6 text-center">
               <span className="block text-sm sm:text-base font-medium text-neutral-900 dark:text-[#E1E0CC]">
-                "{selectedArtwork.name}" — Edition of 25
+                "{selectedArtwork.name}" — Maaya Signature Album
               </span>
               <span className="text-xs text-neutral-500 dark:text-gray-400 font-mono">
                 {selectedSize.label} / {selectedFrame.label}
@@ -124,14 +124,14 @@ export const PrintConfigurator: React.FC = () => {
           {/* Right Column (5 cols): Configurator Form */}
           <div className="lg:col-span-5 rounded-2xl md:rounded-3xl bg-white dark:bg-[#141414] border border-neutral-200 dark:border-white/10 p-6 sm:p-8 flex flex-col gap-6 shadow-xl dark:shadow-2xl">
             <div>
-              <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Configure Your Edition</h3>
-              <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Select photographic work, frame finish, and museum dimensions.</p>
+              <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Customize Your Storybook</h3>
+              <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Select wedding chapter, album format, and bespoke cover finishing.</p>
             </div>
 
             {/* Artwork Selector */}
             <div className="flex flex-col gap-2">
               <label className="text-xs font-mono uppercase tracking-wider text-neutral-500 dark:text-gray-400">
-                Select Artwork
+                Featured Cover Photo
               </label>
               <select
                 value={selectedArtwork.id}
@@ -152,7 +152,7 @@ export const PrintConfigurator: React.FC = () => {
             {/* Size Options */}
             <div className="flex flex-col gap-2">
               <label className="text-xs font-mono uppercase tracking-wider text-neutral-500 dark:text-gray-400">
-                Print Dimension
+                Storybook Dimensions &amp; Pages
               </label>
               <div className="flex flex-col gap-2">
                 {sizes.map((s) => (
@@ -169,7 +169,7 @@ export const PrintConfigurator: React.FC = () => {
                     }`}
                   >
                     <span>{s.label}</span>
-                    <span className="font-mono text-xs">€{s.price}</span>
+                    <span className="font-mono text-xs">Rs. {s.price.toLocaleString()}</span>
                   </motion.button>
                 ))}
               </div>
@@ -178,7 +178,7 @@ export const PrintConfigurator: React.FC = () => {
             {/* Frame Options */}
             <div className="flex flex-col gap-2">
               <label className="text-xs font-mono uppercase tracking-wider text-neutral-500 dark:text-gray-400">
-                Framing &amp; Mounting
+                Cover Material &amp; Keepsake Box
               </label>
               <div className="flex flex-col gap-2">
                 {frames.map((f) => (
@@ -195,7 +195,7 @@ export const PrintConfigurator: React.FC = () => {
                     }`}
                   >
                     <span>{f.label}</span>
-                    <span className="font-mono text-xs">{f.price > 0 ? `+€${f.price}` : 'Included'}</span>
+                    <span className="font-mono text-xs">{f.price > 0 ? `+Rs. ${f.price.toLocaleString()}` : 'Included'}</span>
                   </motion.button>
                 ))}
               </div>
@@ -207,7 +207,7 @@ export const PrintConfigurator: React.FC = () => {
                 <span className="text-[10px] uppercase font-mono tracking-wider text-neutral-500 dark:text-gray-400 block">
                   Estimated Investment
                 </span>
-                <span className="text-2xl font-bold text-neutral-900 dark:text-[#E1E0CC]">€{totalPrice}</span>
+                <span className="text-2xl font-bold text-neutral-900 dark:text-[#E1E0CC]">Rs. {totalPrice.toLocaleString()}</span>
               </div>
               <motion.a
                 href="#contact"
@@ -215,7 +215,7 @@ export const PrintConfigurator: React.FC = () => {
                 whileTap={{ scale: 0.97 }}
                 className="px-6 py-3 rounded-full bg-black dark:bg-[#DEDBC8] text-white dark:text-black font-medium text-xs sm:text-sm hover:bg-neutral-800 dark:hover:bg-white transition-all shadow-md"
               >
-                Inquire Acquisition
+                Inquire Album Order
               </motion.a>
             </div>
 

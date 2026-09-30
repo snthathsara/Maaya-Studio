@@ -12,7 +12,7 @@ export const About: React.FC = () => {
   });
 
   const statementText =
-    "Over the last fourteen years, I have led remote optical expeditions across thirty-two countries, partnering with architectural monographs, museum curators, and fine art collectors in Zurich, Paris, and Tokyo. Together, we preserve the unmanipulated stillness and atmospheric dignity of our living earth.";
+    "Located along Galle Road in Colombo 6, Maaya Studio (Pvt) Ltd has documented over 850 landmark weddings, romantic pre-shoots, and cultural celebrations across Sri Lanka. We fuse cinema-grade multi-camera filmmaking with heartfelt candid storytelling, crafting timeless heirloom storybooks and evocative wedding films that celebrate your legacy.";
 
   const characters = statementText.split('');
 
@@ -30,17 +30,17 @@ export const About: React.FC = () => {
 
           {/* Top Label */}
           <span className="relative z-10 text-[10px] sm:text-xs tracking-[0.22em] uppercase text-neutral-500 dark:text-[#DEDBC8] font-medium mb-8">
-            Visual Director &amp; Naturalist
+            Cinematography &amp; Fine Art Studio — Colombo 06
           </span>
 
           {/* Multi-Style Pull-Up Heading */}
           <div className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl max-w-4xl mx-auto text-neutral-900 dark:text-[#E1E0CC] font-normal leading-[1.05] sm:leading-[0.96] mb-12">
             <WordsPullUpMultiStyle
               segments={[
-                { text: 'I am Aurelia Vance,', className: 'text-neutral-900 dark:text-[#E1E0CC] font-normal' },
-                { text: 'a self-taught optical director.', className: 'font-serif italic text-neutral-950 dark:text-[#DEDBC8] px-2' },
+                { text: 'We are Maaya Studio,', className: 'text-neutral-900 dark:text-[#E1E0CC] font-normal' },
+                { text: "Colombo's premier wedding visualists.", className: 'font-serif italic text-neutral-950 dark:text-[#DEDBC8] px-2' },
                 {
-                  text: 'I capture medium-format stillness, vanishing horizons, and unmanipulated light.',
+                  text: 'We immortalize timeless vows, intimate pre-shoots, and sacred traditions across Sri Lanka.',
                   className: 'text-neutral-900 dark:text-[#E1E0CC] font-normal',
                 },
               ]}
@@ -63,10 +63,10 @@ export const About: React.FC = () => {
           {/* Credentials Strip (Clean typography, NO dots!) */}
           <div className="relative z-10 w-full pt-10 border-t border-neutral-200 dark:border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { val: '14+', label: 'Years in Field' },
-              { val: '32', label: 'Countries Surveyed' },
-              { val: '100MP', label: 'Medium Format BSI' },
-              { val: '100%', label: 'Optical / Zero AI' },
+              { val: '4.5 ★', label: '53 Google Reviews' },
+              { val: '12+', label: 'Years in Colombo' },
+              { val: '850+', label: 'Weddings & Celebrations' },
+              { val: '100%', label: 'Cinema 4K & Optical Art' },
             ].map((stat, idx) => (
               <motion.div
                 key={idx}

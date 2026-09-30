@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Star, MapPin, Phone, Clock } from 'lucide-react';
 import { WordsPullUp } from './WordsPullUp';
 
 export const Hero: React.FC = () => {
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
           {/* Exact Frame 0 High-Res Poster */}
           <img
             src="/images/hero_poster.webp"
-            alt="Atmospheric Alpine Ridge"
+            alt="Atmospheric Cinematic Visuals"
             fetchPriority="high"
             decoding="async"
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
@@ -62,8 +62,35 @@ export const Hero: React.FC = () => {
         <div className="noise-overlay absolute inset-0 opacity-[0.45] mix-blend-overlay pointer-events-none" />
 
         {/* Cinematic Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/20 to-black/90 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/90 pointer-events-none" />
         <div className="absolute inset-0 bg-radial-vignette opacity-50 pointer-events-none" />
+
+        {/* Floating Google Trust Badge on Top Right */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="absolute top-4 sm:top-6 right-4 sm:right-6 z-20 hidden sm:flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[#E1E0CC] text-xs shadow-lg"
+        >
+          <div className="flex items-center text-amber-400">
+            <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+            <span className="font-semibold ml-1 text-white">4.5</span>
+          </div>
+          <span className="text-white/40">|</span>
+          <a
+            href="https://www.google.com/search?q=Maaya+Studio&ie=UTF-8#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline text-gray-300 hover:text-white"
+          >
+            53 Google reviews
+          </a>
+          <span className="text-white/40">|</span>
+          <span className="text-emerald-400 flex items-center gap-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            Open until 9 PM
+          </span>
+        </motion.div>
 
         {/* Content (Bottom-aligned) */}
         <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-end pt-16 sm:pt-20 md:pt-24 pb-1 sm:pb-2">
@@ -75,7 +102,7 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, x: -15 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-              className="flex items-center gap-2 mb-1.5 sm:mb-2.5"
+              className="flex items-center gap-2 mb-1.5 sm:mb-2.5 flex-wrap"
             >
               <motion.span
                 initial={{ width: 0 }}
@@ -84,13 +111,13 @@ export const Hero: React.FC = () => {
                 className="h-[1px] bg-[#DEDBC8]/60 inline-block"
               />
               <span className="text-[9px] sm:text-xs tracking-[0.2em] uppercase text-[#DEDBC8]/90 font-medium">
-                Atelier of Optical Light / Monograph '26
+                Maaya Studio (Pvt) Ltd — Galle Rd, Colombo 06
               </span>
             </motion.div>
             
             {/* Responsive Scaled Title */}
             <WordsPullUp
-              text="Vance"
+              text="Maaya"
               showAsterisk={true}
               className="text-[#E1E0CC] font-medium leading-[0.85] tracking-[-0.07em] text-[16vw] sm:text-[18vw] md:text-[17vw] lg:text-[16vw] xl:text-[15vw] select-none"
             />
@@ -104,13 +131,14 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="text-[#DEDBC8]/90 text-[11px] sm:text-xs md:text-sm lg:text-base leading-relaxed max-w-md font-light line-clamp-3 sm:line-clamp-none"
             >
-              Aurelia Vance is an international landscape director and medium-format photographer bound not by trend or artificial synthesis, but by the relentless discipline to capture raw light and silent earth.
+              Colombo's premier wedding cinematography and portrait studio. Capturing timeless vows, intimate pre-shoots, and sacred traditions across Sri Lanka with unmanipulated natural light and cinema-grade optics.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
+              className="flex flex-wrap items-center gap-3"
             >
               <motion.a
                 href="#gallery"
@@ -118,16 +146,27 @@ export const Hero: React.FC = () => {
                 whileTap={{ scale: 0.97 }}
                 className="group inline-flex items-center gap-2.5 sm:gap-3 pl-4 sm:pl-5 pr-1.5 sm:pr-2 py-1.5 sm:py-2 rounded-full bg-[#DEDBC8] text-black font-medium text-xs sm:text-sm md:text-base transition-shadow duration-300 shadow-lg hover:shadow-[#DEDBC8]/25"
               >
-                <span>Explore monographs</span>
+                <span>Explore wedding works</span>
                 <span className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-black flex items-center justify-center text-[#DEDBC8] transition-transform duration-300 group-hover:scale-110">
                   <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                 </span>
+              </motion.a>
+
+              <motion.a
+                href="https://www.google.com/search?q=Maaya+Studio&ie=UTF-8#"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.03, y: -1 }}
+                whileTap={{ scale: 0.97 }}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-[#E1E0CC] text-xs font-mono transition-colors"
+              >
+                <MapPin className="w-3.5 h-3.5 text-amber-400" />
+                <span>Directions &amp; Reviews</span>
               </motion.a>
             </motion.div>
           </div>
 
         </div>
-
       </div>
     </section>
   );

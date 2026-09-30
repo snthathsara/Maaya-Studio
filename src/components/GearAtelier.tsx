@@ -6,27 +6,27 @@ export const GearAtelier: React.FC = () => {
   const tools = [
     {
       icon: Camera,
-      title: 'Hasselblad X2D 100C',
-      type: '100MP Medium Format BSI CMOS',
-      desc: '16-bit color depth delivering 281 trillion colors and 15 stops of dynamic range for architectural exhibitions.',
+      title: 'Sony FX3 Cinema Line Full-Frame',
+      type: '4K 120fps 10-bit 4:2:2 / S-Cinetone',
+      desc: 'Industry-standard cinema sensor delivering cinematic film motion, creamy highlight roll-off, and flawless low-light performance during evening ballroom receptions.',
     },
     {
       icon: Eye,
-      title: 'Leica M11 Rangefinder',
-      type: '60MP Full-Frame / Noctilux Glass',
-      desc: 'Silent focal plane shutter and discreet manual focus for intimate desert caravans and atmospheric encounters.',
+      title: 'Sony α7R V 61MP Stills System',
+      type: '61MP BSI CMOS / AI Subject Tracking',
+      desc: 'Hyper-detailed photographic resolution designed for large-format heirloom storybooks, preserving intricate bridal embroidery and sacred Poruwa moments.',
     },
     {
       icon: Disc,
-      title: 'Apochromatic Prime Arsenal',
-      type: 'Summicron 35mm / XCD 55mm & 90mm',
-      desc: 'German precision glass elements maintaining corner-to-corner micro-contrast and zero optical distortion.',
+      title: 'Sony G Master Prime Arsenal',
+      type: '35mm f/1.4 / 50mm f/1.2 / 85mm f/1.4 GM',
+      desc: 'Fast optical elements delivering dreamy background separation, three-dimensional depth, and flattering natural skin tones in ambient wedding illumination.',
     },
     {
       icon: Cpu,
-      title: 'Color Calibration Atelier',
-      type: 'Capture One Pro / EIZO ColorEdge',
-      desc: 'Rigorous color-managed workflow calibrated to Fogra39 and Adobe RGB 1998 museum standards.',
+      title: 'DJI Ronin RS3 & Aerial Cine Drone',
+      type: '3-Axis Stabilization & 4K Drone Flight',
+      desc: 'Ultra-fluid gimbal tracking for cinematic bridal entrances, paired with panoramic aerial vistas across coastal shores, historic kovils, and luxury venues.',
     },
   ];
 
@@ -38,14 +38,14 @@ export const GearAtelier: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4 border-b border-neutral-200 dark:border-white/10">
           <div>
             <span className="text-xs uppercase tracking-widest text-neutral-500 dark:text-[#DEDBC8] font-mono block mb-2 font-medium">
-              Optical Craftsmanship
+              Cinema &amp; Stills Technology
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-neutral-900 dark:text-[#E1E0CC] tracking-tight">
-              The Optical Arsenal
+              Production Suite
             </h2>
           </div>
           <p className="text-neutral-500 dark:text-gray-400 text-xs sm:text-sm md:text-base max-w-md font-light leading-relaxed">
-            Uncompromising medium-format digital backs and German prime glass configured for extreme field reliability.
+            Full-frame 4K cinema bodies, G Master high-speed primes, and stabilized aerial optics engineered for timeless wedding storytelling.
           </p>
         </div>
 

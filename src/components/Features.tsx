@@ -32,13 +32,13 @@ export const Features: React.FC = () => {
           <WordsPullUpMultiStyle
             segments={[
               {
-                text: 'Studio-grade optical workflows for visionary collectors.',
+                text: 'Signature wedding cinematography & fine art photography.',
                 className: 'text-neutral-900 dark:text-[#DEDBC8] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal',
               },
             ]}
           />
           <span className="text-neutral-500 dark:text-gray-400 text-lg sm:text-xl md:text-2xl font-light">
-            Built for pure vision. Powered by optical art.
+            Tailored coverage for grand celebrations, sacred vows, and romantic pre-shoots.
           </span>
         </div>
 
@@ -71,15 +71,15 @@ export const Features: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 z-10">
               <span className="text-xs uppercase tracking-widest text-[#DEDBC8]/90 font-mono block mb-1">
-                Visual Canvas
+                Cinema Suite
               </span>
               <h3 className="text-xl sm:text-2xl text-white font-normal">
-                Your creative horizon.
+                Cinematic wedding films.
               </h3>
             </div>
           </motion.div>
 
-          {/* Card 2: Project Monograph (01) */}
+          {/* Card 2: Wedding Cinema (01) */}
           <motion.div
             custom={1}
             variants={cardVariants}
@@ -94,31 +94,31 @@ export const Features: React.FC = () => {
                   01
                 </span>
                 <span className="text-[11px] uppercase tracking-wider text-neutral-500 dark:text-gray-400 font-mono">
-                  Expedition
+                  Wedding Day
                 </span>
               </div>
               <div>
-                <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Project Storyboard.</h3>
-                <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Multi-season terrain documentation.</p>
+                <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Ceremony &amp; Poruwa.</h3>
+                <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Multi-angle cinema &amp; candid photography.</p>
               </div>
 
               {/* Checklist */}
               <div className="flex flex-col gap-2.5 mt-2">
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>Pre-dawn celestial tracking</span>
+                  <span>4K multi-camera &amp; drone footage</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>Topographic weather forecasting</span>
+                  <span>Traditional ritual &amp; candid family moments</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>GPS geo-referenced monographs</span>
+                  <span>High-fidelity vows sound recording</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>Complete raw spectrum archives</span>
+                  <span>Same-day social media teaser reels</span>
                 </div>
               </div>
             </div>
@@ -127,12 +127,12 @@ export const Features: React.FC = () => {
               href="#gallery"
               className="inline-flex items-center gap-2 text-xs font-medium text-neutral-900 dark:text-[#DEDBC8] hover:text-black dark:hover:text-white transition-colors pt-4 border-t border-neutral-100 dark:border-white/5"
             >
-              <span>Explore projects</span>
+              <span>View wedding gallery</span>
               <ArrowRight className="w-3.5 h-3.5 -rotate-45 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </motion.div>
 
-          {/* Card 3: Optical Precision (02) */}
+          {/* Card 3: Destination Pre-Shoots (02) */}
           <motion.div
             custom={2}
             variants={cardVariants}
@@ -147,41 +147,45 @@ export const Features: React.FC = () => {
                   02
                 </span>
                 <span className="text-[11px] uppercase tracking-wider text-neutral-500 dark:text-gray-400 font-mono">
-                  Optical
+                  Pre-Shoots
                 </span>
               </div>
               <div>
-                <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Optical Mastery.</h3>
-                <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Medium-format sensor science.</p>
+                <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Island Pre-Shoots.</h3>
+                <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Romantic destination storytelling.</p>
               </div>
 
               {/* Checklist */}
               <div className="flex flex-col gap-2.5 mt-2">
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>16-bit Hasselblad color calibration</span>
+                  <span>Galle Fort &amp; southern coast sunsets</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>Leica apochromatic optics</span>
+                  <span>Nuwara Eliya misty tea highland estates</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>15 stops of optical dynamic range</span>
+                  <span>Styling direction &amp; concept design</span>
+                </div>
+                <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
+                  <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
+                  <span>High-resolution retouched master portfolio</span>
                 </div>
               </div>
             </div>
 
             <a
-              href="#gear"
+              href="#gallery"
               className="inline-flex items-center gap-2 text-xs font-medium text-neutral-900 dark:text-[#DEDBC8] hover:text-black dark:hover:text-white transition-colors pt-4 border-t border-neutral-100 dark:border-white/5"
             >
-              <span>Inspect gear</span>
+              <span>Explore pre-shoots</span>
               <ArrowRight className="w-3.5 h-3.5 -rotate-45 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </motion.div>
 
-          {/* Card 4: Immersion Capsule (03) */}
+          {/* Card 4: Heirloom Albums (03) */}
           <motion.div
             custom={3}
             variants={cardVariants}
@@ -196,27 +200,31 @@ export const Features: React.FC = () => {
                   03
                 </span>
                 <span className="text-[11px] uppercase tracking-wider text-neutral-500 dark:text-gray-400 font-mono">
-                  Atelier
+                  Storybooks
                 </span>
               </div>
               <div>
-                <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Immersion Capsule.</h3>
-                <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Archival printmaking craft.</p>
+                <h3 className="text-xl font-medium text-neutral-900 dark:text-[#E1E0CC]">Heirloom Storybooks.</h3>
+                <p className="text-xs text-neutral-500 dark:text-gray-400 mt-1">Handcrafted Italian flushmount albums.</p>
               </div>
 
               {/* Checklist */}
               <div className="flex flex-col gap-2.5 mt-2">
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>310gsm 100% cotton rag paper</span>
+                  <span>Crystal acrylic &amp; genuine leather covers</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>Pigment ink permanence (200+ years)</span>
+                  <span>Seamless panoramic 180° lay-flat pages</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
                   <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
-                  <span>Hand-signed certificates &amp; seals</span>
+                  <span>UV protective archival coating</span>
+                </div>
+                <div className="flex items-start gap-2.5 text-xs text-neutral-700 dark:text-gray-300">
+                  <Check className="w-4 h-4 text-black dark:text-[#DEDBC8] shrink-0 mt-0.5" />
+                  <span>Matching parent mini-album gift editions</span>
                 </div>
               </div>
             </div>
@@ -225,7 +233,7 @@ export const Features: React.FC = () => {
               href="#prints"
               className="inline-flex items-center gap-2 text-xs font-medium text-neutral-900 dark:text-[#DEDBC8] hover:text-black dark:hover:text-white transition-colors pt-4 border-t border-neutral-100 dark:border-white/5"
             >
-              <span>Configure prints</span>
+              <span>Configure album</span>
               <ArrowRight className="w-3.5 h-3.5 -rotate-45 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </motion.div>
